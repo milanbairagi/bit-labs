@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12 - Box Sizing</title>
+    <style>
+        .content-box {
+            box-sizing: content-box;
+            width: 200px;
+            padding: 20px;
+            border: 5px solid #00b894;
+            margin-bottom: 20px;
+            background: #dfe6e9;
+        }
+        .border-box {
+            box-sizing: border-box;
+            width: 200px;
+            padding: 20px;
+            border: 5px solid #e17055;
+            background: #ffeaa7;
+        }
+    </style>
+</head>
+<body>
+    <h2>Box Sizing Comparison</h2>
+    <div class="content-box">Content-box (width excludes padding & border)</div>
+    <div class="border-box">Border-box (width includes padding & border)</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 38</title>
+    <style>
+        .hide-on-mobile {
+            background: #bcecf0;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .resize-on-mobile {
+            background: #ffeaa7;
+            padding: 20px;
+            margin: 20px 0;
+            width: 80%;
+        }
+        @media (max-width: 600px) {
+            .hide-on-mobile {
+                display: none;
+            }
+            .resize-on-mobile {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hide-on-mobile">Hide on smallar screen</div>
+    <div class="resize-on-mobile">Resize on smallar screen</div>
+</body>
+</html>

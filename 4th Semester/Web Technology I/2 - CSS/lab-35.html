@@ -1,0 +1,55 @@
+<!-- Use position: relative, absolute, and float to place elements on the page, such as a floating image or a fixed header. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 35</title>
+  <style>
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    body {
+      padding-top: 50px;
+    }
+
+    .image {
+      float: left;
+      margin: 10px;
+      width: 200px;
+    }
+
+    .box {
+      position: relative;
+      padding: 20px;
+    }
+
+    .inside {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #3f3939;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Fixed Header</div>
+
+  <img src="/tank-images/khufra.jpg" class="image">
+
+  <div class="box">
+    <p>This is text next to a floating image.</p>
+    <div class="inside">Absolute</div>
+  </div>
+
+</body>
+</html>

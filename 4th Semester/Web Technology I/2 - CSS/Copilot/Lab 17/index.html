@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 17 - Responsive Media Queries</title>
+    <style>
+        .responsive-box {
+            width: 80%;
+            margin: 30px auto;
+            padding: 30px;
+            background: #dff9fb;
+            text-align: center;
+            font-size: 2em;
+        }
+        @media (max-width: 900px) {
+            .responsive-box {
+                background: #ffeaa7;
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width: 600px) {
+            .responsive-box {
+                background: #fab1a0;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive-box">
+        Resize the browser window to see the background and font size change for mobile, tablet, and desktop views.
+    </div>
+</body>
+</html>

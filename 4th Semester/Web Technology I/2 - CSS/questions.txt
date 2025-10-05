@@ -1,0 +1,20 @@
+21.	Create a simple HTML page and apply basic CSS styles using all three methods (inline, internal, external).
+22.	Write CSS rules using correct syntax to change the text color, background, and font size of a paragraph.
+23.	Demonstrate the use of ID and class selectors by styling different sections of a web page differently.
+24.	Create a navigation bar using <ul> and style it using class selectors.
+25.	Design a section with a gradient background and different border styles for each side.
+26.	Change the text color on hover using the :hover pseudo-class.
+27.	Style headings and paragraphs with different font families, sizes, styles, and weights.
+28.	Use @import or link to include Google Fonts and apply them to your content.
+29.	Create a styled ordered and unordered list with custom bullets or icons.
+30.	Create a table and use CSS to style it with alternate row colors, border collapsing, and hover effects.
+31.	Demonstrate the CSS Box Model by creating a div with content, padding, border, and margin, and explain its layout.
+32.	Use the box-sizing property to compare content-box and border-box.
+33.	Create two boxes using the display property (inline, block, inline-block, none) and observe changes.
+34.	Design a layout with three boxes using margin, padding, and border to control spacing and alignment.
+35.	Use position: relative, absolute, and float to place elements on the page, such as a floating image or a fixed header.
+36.	Design a simple card layout using floating boxes with clear fixes.
+37.	Create a responsive web page using media queries to change layout for mobile, tablet, and desktop views.
+38.	Hide or resize elements based on screen width using media queries.
+39.	Convert a simple image-based UI mockup (e.g., a banner and 3-column layout) into a responsive HTML/CSS design.
+40.	Create a responsive navigation menu that collapses into a hamburger menu on smaller screens (basic version without JavaScript).

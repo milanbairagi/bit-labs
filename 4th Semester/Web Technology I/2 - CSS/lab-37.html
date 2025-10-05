@@ -1,0 +1,43 @@
+<!-- Create a responsive web page using media queries to change layout for mobile, tablet, and desktop views. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 37</title>
+
+    <style>
+        .container {
+            display: grid;
+            gap: 10px;
+        }
+
+        .card {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        @media (min-width: 480px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                
+            }
+        }
+
+        @media (min-width: 770px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+    </div>
+</body>
+</html>

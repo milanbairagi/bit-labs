@@ -1,0 +1,55 @@
+<!-- Convert a simple image-based UI mockup (e.g., a banner and 3-column layout) into a responsive HTML/CSS design. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 39</title>
+
+    <style>
+        .banner {
+            text-align: center;
+            background-color: #c9ccd1;
+            font-family: Arial;
+            padding: 10px;
+        }
+        .wrapper {
+            display: grid;
+            gap: 10px;
+        }
+
+        .wrapper img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        @media (min-width: 480px) {
+            .wrapper {
+                grid-template-columns: repeat(2, 2fr);
+            }
+        }
+
+        @media (min-width: 769px) {
+            .wrapper {
+                grid-template-columns: repeat(3, 2fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3 class="banner">MLBB Tanks</h3>
+    <div class="wrapper">
+        <img src="/tank-images/khufra.jpg" alt="">
+        <img src="/tank-images/tigreal.jpg" alt="">
+        <img src="/tank-images/hylos.jpg" alt="">
+        <img src="/tank-images/chip.jpg" alt="">
+        <img src="/tank-images/minotaur.jpg" alt="">
+        <img src="/tank-images/belerick.jpg" alt="">
+        <img src="/tank-images/johnson.jpg" alt="">
+        <img src="/tank-images/franco.jpg" alt="">
+        <img src="/tank-images/gatotkaca.jpg" alt="">
+    </div>
+</body>
+</html>

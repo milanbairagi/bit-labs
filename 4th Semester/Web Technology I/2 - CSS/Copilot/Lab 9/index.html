@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 9 - Custom List Styles</title>
+    <style>
+        ul.custom-bullets {
+            list-style-type: square;
+        }
+        ol.custom-numbers {
+            list-style-type: upper-roman;
+        }
+        ul.icons {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul.icons li::before {
+            content: '\2022';
+            color: #e17055;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Custom Bullets</h2>
+    <ul class="custom-bullets">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ul>
+    <h2>Custom Numbered List</h2>
+    <ol class="custom-numbers">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+    <h2>List with Icon Bullets</h2>
+    <ul class="icons">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,91 @@
+Student no. 1:
+        Name: Olivia Johnson
+        Roll No.: 101
+        Address: 123 Maple St.
+        Age: 18
+        Average Mark: 87.5
+Student no. 2:
+        Name: Ethan Patel
+        Roll No.: 102
+        Address: 456 Oak Ave.
+        Age: 17
+        Average Mark: 92.0
+Student no. 3:
+        Name: Sophia Lee
+        Roll No.: 103
+        Address: 789 Elm Rd.
+        Age: 18
+        Average Mark: 78.5
+Student no. 4:
+        Name: Liam Gupta
+        Roll No.: 104
+        Address: 567 Pine Ln.
+        Age: 17
+        Average Mark: 85.0
+Student no. 5:
+        Name: Emma Sharma
+        Roll No.: 105
+        Address: 890 Cedar Ct.
+        Age: 18
+        Average Mark: 91.5
+Student no. 6:
+        Name: Noah Khan
+        Roll No.: 106
+        Address: 234 Birch St.
+        Age: 17
+        Average Mark: 80.0
+Student no. 7:
+        Name: Ava Joshi
+        Roll No.: 107
+        Address: 678 Willow Ave.
+        Age: 18
+        Average Mark: 88.5
+Student no. 8:
+        Name: William Tamang
+        Roll No.: 108
+        Address: 345 Maple Rd.
+        Age: 17
+        Average Mark: 89.0
+Student no. 9:
+        Name: Isabella Rai
+        Roll No.: 109
+        Address: 901 Oak Ln.
+        Age: 18
+        Average Mark: 83.5
+Student no. 10:
+        Name: James Thapa
+        Roll No.: 110
+        Address: 123 Elm St.
+        Age: 17
+        Average Mark: 86.0
+Student no. 11:
+        Name: Mia Shrestha
+        Roll No.: 111
+        Address: 456 Pine Ave.
+        Age: 18
+        Average Mark: 90.5
+Student no. 12:
+        Name: Alex Bhattarai
+        Roll No.: 112
+        Address: 789 Cedar Rd.
+        Age: 17
+        Average Mark: 84.0
++-----------------+----------+----------------------+-----+--------------+
+| Name            | Roll No. | Address              | Age | Average Mark |
++-----------------+----------+----------------------+-----+--------------+
+| Olivia Johnson  | 101      | 123 Maple St.        | 18  | 87           |
+| Ethan Patel     | 102      | 456 Oak Ave.         | 17  | 92           |
+| Sophia Lee      | 103      | 789 Elm Rd.          | 18  | 78           |
+| Liam Gupta      | 104      | 567 Pine Ln.         | 17  | 85           |
+| Emma Sharma     | 105      | 890 Cedar Ct.        | 18  | 91           |
+| Noah Khan       | 106      | 234 Birch St.        | 17  | 80           |
+| Ava Joshi       | 107      | 678 Willow Ave.      | 18  | 88           |
+| William Tamang  | 108      | 345 Maple Rd.        | 17  | 89           |
+| Isabella Rai    | 109      | 901 Oak Ln.          | 18  | 83           |
+| James Thapa     | 110      | 123 Elm St.          | 17  | 86           |
+| Mia Shrestha    | 111      | 456 Pine Ave.        | 18  | 90           |
+| Alex Bhattarai  | 112      | 789 Cedar Rd.        | 17  | 84           |
++-----------------+----------+----------------------+-----+--------------+
+
+programmed by Milan Bairagi
+
