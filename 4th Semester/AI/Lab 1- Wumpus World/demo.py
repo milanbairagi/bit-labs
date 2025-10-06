@@ -11,17 +11,20 @@ def demo():
         size=4,
         pits=[(0,3),(3,1)],
         wumpus=(2,2),
-        gold=(0,2),
+        gold=(1,2),
         agent_pos=(0,0),
         agent_dir="N"
     )
-    agent = SimpleReflexAgent()
+    # agent = SimpleReflexAgent()
+    # agent = ModelBasedAgent()
+    # agent = GoalBasedAgent()
+    agent = UtilityBasedAgent()
     print("Initial world:")
     print(f"Agent at {env.agent_pos} facing {env.agent_dir}. Gold at {env.gold}, Wumpus at {env.wumpus}, Pits: {env.pits}")
     env.draw()
     
-    print("\nRunning simulation (max 30 steps)...\n")
-    for step in range(30):
+    print("\nRunning simulation (max 50 steps)...\n")
+    for step in range(50):
         p = env.percept()
         print(f"Step {step+1} | Percept -> stench:{p.stench} breeze:{p.breeze} glitter:{p.glitter} bump:{p.bump} scream:{p.scream}")
         act = agent.action(p, env)
