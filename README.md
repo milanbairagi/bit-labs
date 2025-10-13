@@ -1,7 +1,5 @@
 # BIT Labs: Lab Reports for Bachelor in Information Technology (BIT)
 
-Welcome to the BIT Labs repository! This repository contains lab reports and practical files for the Bachelor in Information Technology (BIT) course, organized by semester and subject.
-
 ## Table of Contents
 
 | Semester         | Subject             | Link                                                                 |
