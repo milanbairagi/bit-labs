@@ -122,7 +122,8 @@ class ModelBasedAgent:
             x, y = pos
             for dx, dy in [(0,1), (1,0), (0,-1), (-1,0)]:
                 next_pos = (x+dx, y+dy)
-                if next_pos in self.visited and next_pos not in seen:
+                # Allow stepping into the goal even if it's not yet in visited
+                if next_pos not in seen and (next_pos == goal or next_pos in self.visited):
                     seen.add(next_pos)
                     queue.append((next_pos, path + [next_pos]))
         return []
