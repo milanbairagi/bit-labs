@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-| Semester         | Subject             | Link                                                                 |
+| Semester         | Course              | Link                                                                 |
 |------------------|---------------------|----------------------------------------------------------------------|
 | 1st Semester     | C Programming       | [C Programming](1st%20Semester/C%20Programming/)                     |
 | 2nd Semester     | Basic Statistics    | [Basic Statistics](2nd%20Semester/Basic%20Statistics/)               |
