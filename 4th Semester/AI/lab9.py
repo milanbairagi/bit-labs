@@ -1,5 +1,5 @@
 """
-Parse Tree Generator - Simple Version (No External Libraries)
+Parse Tree Generator - Simple Version
 Draws parse trees for simple English sentences
 """
 
@@ -98,10 +98,10 @@ def draw_tree(sentence):
         print("  - the dog is happy")
 
 # Main Program
-print("=" * 60)
-print("Parse Tree Generator")
-print("=" * 60)
-print("\nGrammar Rules:")
+# print("=" * 60)
+# print("Parse Tree Generator")
+# print("=" * 60)
+print("Grammar Rules:")
 print("  S  -> NP VP           (Sentence = Noun Phrase + Verb Phrase)")
 print("  NP -> Det N           (Noun Phrase = Determiner + Noun)")
 print("  NP -> Det Adj N       (Noun Phrase = Det + Adjective + Noun)")
@@ -109,28 +109,35 @@ print("  VP -> V NP            (Verb Phrase = Verb + Noun Phrase)")
 print("  VP -> V Adj           (Verb Phrase = Verb + Adjective)")
 print("=" * 60)
 
-print("\nExample Sentences:")
-examples = [
-    "the cat chased the dog",
-    "a boy read the book",
-    "the dog is happy",
-    "a big cat ate the small ball"
-]
+# print("\nExample Sentences:")
+# examples = [
+#     "the cat chased the dog",
+#     "a boy read the book",
+#     "the dog is happy",
+#     "a big cat ate the small ball"
+# ]
 
-for ex in examples:
-    print(f"  - {ex}")
+# for ex in examples:
+#     print(f"  - {ex}")
 
-print("\n" + "=" * 60)
+# print("\n" + "=" * 60)
 
 # Interactive mode
-while True:
-    sentence = input("\nEnter a sentence (or 'quit' to exit): ").strip()
+# while True:
+#     sentence = input("\nEnter a sentence (or 'quit' to exit): ").strip()
     
-    if sentence.lower() == 'quit':
-        print("Goodbye!")
-        break
+#     if sentence.lower() == 'quit':
+#         print("Goodbye!")
+#         break
     
-    if sentence:
-        draw_tree(sentence)
-    else:
-        print("Please enter a valid sentence!")
+#     if sentence:
+#         draw_tree(sentence)
+#     else:
+#         print("Please enter a valid sentence!")
+
+# Less interactive mode
+sentence = input("Enter a sentence to parse: ").strip()
+if sentence:
+    draw_tree(sentence)
+
+print("\nProgrammed by Milan Bairagi...")

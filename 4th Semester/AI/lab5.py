@@ -1,6 +1,6 @@
-print("=" * 50)
-print("AND GATE USING NEURAL NETWORKS")
-print("=" * 50)
+# print("=" * 50)
+# print("AND GATE USING NEURAL NETWORKS")
+# print("=" * 50)
 
 X = [[-1, -1],
      [-1, 1],
@@ -85,3 +85,4 @@ for i in range(len(X)):
     prediction = 1 if output >= 1 else 0
     print(f"Input: {X[i]} -> Output: {prediction} (Expected: {y[i]})")
 
+print("\nProgrammed by Milan Bairagi...")

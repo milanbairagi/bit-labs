@@ -83,9 +83,11 @@ for message in test_data:
     print(f"Message: '{message}'")
     print(f"Prediction: {prediction.upper()}\n")
 
-# Manual test
-print("=" * 50)
-print("Try your own message:")
-user_message = input("Enter a message: ")
-result = classifier.predict(user_message)
-print(f"\nPrediction: {result.upper()}")
+# # Manual test
+# print("=" * 50)
+# print("Try your own message:")
+# user_message = input("Enter a message: ")
+# result = classifier.predict(user_message)
+# print(f"\nPrediction: {result.upper()}")
+
+print("\nProgrammed by Milan Bairagi...")

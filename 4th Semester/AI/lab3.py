@@ -26,12 +26,12 @@ heuristic = {
 def best_first_search(start, goal):
     """Best First Search - uses only heuristic h(n)"""
     pq = PriorityQueue()
-    pq.put((heuristic[start], start, [start]))
+    pq.put((heuristic[start], 0, start, [start]))
     visited = set()
     
     print("\n--- Best First Search ---")
     while not pq.empty():
-        h_val, node, path = pq.get()
+        h_val, g_val, node, path = pq.get()
         
         if node in visited:
             continue
@@ -40,14 +40,15 @@ def best_first_search(start, goal):
         print(f"Visiting: {node}, Path: {' -> '.join(path)}, h = {h_val}")
         
         if node == goal:
-            print(f"\nGoal reached! Path: {' -> '.join(path)}")
-            return path
+            print(f"\nGoal reached! Path: {' -> '.join(path)}, Total Cost: {g_val}")
+            return path, g_val
         
         for neighbor, cost in graph[node]:
             if neighbor not in visited:
+                new_g = g_val + cost
                 new_path = path + [neighbor]
-                pq.put((heuristic[neighbor], neighbor, new_path))
-    
+                pq.put((heuristic[neighbor], new_g, neighbor, new_path))
+
     return None
 
 def a_star_search(start, goal):
@@ -85,10 +86,6 @@ if __name__ == "__main__":
     start_node = 'S'
     goal_node = 'G'
     
-    print("=" * 50)
-    print("Path Problem Solver")
-    print("=" * 50)
-    
     # Best First Search
     bfs_path = best_first_search(start_node, goal_node)
     
@@ -96,9 +93,5 @@ if __name__ == "__main__":
     
     # A* Search
     astar_path, astar_cost = a_star_search(start_node, goal_node)
-    
-    print("\n" + "=" * 50)
-    print("COMPARISON")
-    print("=" * 50)
-    print(f"Best First Search: {' -> '.join(bfs_path) if bfs_path else 'No path found'}")
-    print(f"A* Search: {' -> '.join(astar_path) if astar_path else 'No path found'} (Cost: {astar_cost})")
+
+    print("\nProgrammed by Milan Bairagi...")

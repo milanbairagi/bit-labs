@@ -1,56 +1,74 @@
 import numpy as np
 import random
 
-# Genetic Algorithm to maximize f(x) = x^2 where x is in [0, 31]
-POP_SIZE = 6
-GENERATIONS = 15
-MUTATION_RATE = 0.1
-
-# Fitness function
-def fitness(x):
-    return x ** 2
-
-# Convert binary list to decimal
-def decode(chromosome):
-    return int(''.join(map(str, chromosome)), 2)
-
-# Initialize population (5 bits = 0-31)
-population = [list(np.random.randint(0, 2, 5)) for _ in range(POP_SIZE)]
-
-print("Genetic Algorithm: Maximizing f(x) = x^2\n")
-
-# Evolution loop
-for gen in range(GENERATIONS):
-    # Evaluate fitness
-    x_values = [decode(ind) for ind in population]
-    fit_values = [fitness(x) for x in x_values]
+class GA:
+    def __init__(self, pop_size=10, generations=20, mutation_rate=0.1, bits=5):
+        self.pop_size = pop_size
+        self.generations = generations
+        self.mutation_rate = mutation_rate
+        self.bits = bits
     
-    best_x = x_values[fit_values.index(max(fit_values))]
-    print(f"Gen {gen+1}: Best x = {best_x}, f(x) = {fitness(best_x)}")
+    def fitness(self, x):
+        return -x**2 + 8*x + 5
     
-    # Create new generation
-    new_pop = []
-    for _ in range(POP_SIZE // 2):
-        # Selection: Pick 2 parents based on fitness
-        parents = random.choices(population, weights=fit_values, k=2)
-        
-        # Crossover: Single point
-        point = random.randint(1, 4)
-        child1 = parents[0][:point] + parents[1][point:]
-        child2 = parents[1][:point] + parents[0][point:]
-        
-        # Mutation: Flip bits randomly
-        for child in [child1, child2]:
-            for i in range(5):
-                if random.random() < MUTATION_RATE:
-                    child[i] = 1 - child[i]
-        
-        new_pop.extend([child1, child2])
+    def decode(self, chrom):
+        return int(''.join(map(str, chrom)), 2)
     
-    population = new_pop
+    def selection(self, pop, fit_vals):
+        # Shift fitness to make all values positive
+        min_fit = min(fit_vals)
+        if min_fit <= 0:
+            fit_vals = [f - min_fit + 1 for f in fit_vals]
+        
+        total = sum(fit_vals)
+        probs = [f / total for f in fit_vals]
+        return random.choices(pop, weights=probs, k=2)
+    
+    def crossover(self, p1, p2):
+        pt = random.randint(1, self.bits - 1)
+        return p1[:pt] + p2[pt:], p2[:pt] + p1[pt:]
+    
+    def mutation(self, chrom):
+        for i in range(self.bits):
+            if random.random() < self.mutation_rate:
+                chrom[i] = 1 - chrom[i]
+        return chrom
+    
+    def evolve(self):
+        pop = [list(np.random.randint(0, 2, self.bits)) for _ in range(self.pop_size)]
+        best_ever_x, best_ever_fit = None, float('-inf')
+        
+        print("GENETIC ALGORITHM: Maximize f(x) = -x^2 + 8x + 5\n")
+        
+        for gen in range(self.generations):
+            x_vals = [self.decode(ind) for ind in pop]
+            fit_vals = [self.fitness(x) for x in x_vals]
+            best_x, best_fit = x_vals[fit_vals.index(max(fit_vals))], max(fit_vals)
+            
+            # Keep track of best solution ever found
+            if best_fit > best_ever_fit:
+                best_ever_x, best_ever_fit = best_x, best_fit
+            
+            print(f"Gen {gen+1}: x = {best_x}, f(x) = {best_fit:.2f}")
+            
+            new_pop = []
+            for _ in range(self.pop_size // 2):
+                # Selection
+                p1, p2 = self.selection(pop, fit_vals)
+                
+                # Crossover
+                c1, c2 = self.crossover(p1.copy(), p2.copy())
+                
+                # Mutation
+                c1 = self.mutation(c1)
+                c2 = self.mutation(c2)
+                
+                new_pop.extend([c1, c2])
+            
+            pop = new_pop
+        
+        print(f"\nFinal Best: x = {best_ever_x}, f(x) = {best_ever_fit:.2f}")
+        print(f"Expected: x = 4, f(x) = 21.00")
 
-# Final result
-x_values = [decode(ind) for ind in population]
-fit_values = [fitness(x) for x in x_values]
-best_x = x_values[fit_values.index(max(fit_values))]
-print(f"\nOptimal Solution: x = {best_x}, f(x) = {fitness(best_x)}")
+GA(pop_size=12, generations=20, mutation_rate=0.1, bits=5).evolve()
+print("\nProgrammed by Milan Bairagi...")
