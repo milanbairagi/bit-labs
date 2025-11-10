@@ -20,7 +20,6 @@ w_hebb = [0.0, 0.0]
 b_hebb = 0.0
 
 # Training
-# learning_rate = 0.1
 for i in range(len(X)):
     # Hebbian learning rule: w_i(new) = w_i(old) + (x_i, y)
     # b = b + y
@@ -57,17 +56,18 @@ learning_rate = 0.5
 
 MAX_EPOCHS = 10
 epoch = 0
-
+bias = 0.5
 while epoch < MAX_EPOCHS:
     global_error = 0
     
     for i in range(len(X)):
-        output = X[i][0] * w_perceptron[0] + X[i][1] * w_perceptron[1]
+        output = X[i][0] * w_perceptron[0] + X[i][1] * w_perceptron[1] + bias
         prediction = 1 if output >= 1 else 0
         error = y[i] - prediction
         if error != 0:
             w_perceptron[0] += learning_rate * error * X[i][0]
             w_perceptron[1] += learning_rate * error * X[i][1]
+            bias += learning_rate * error
             global_error += abs(error)
             break
 
@@ -77,11 +77,12 @@ while epoch < MAX_EPOCHS:
     epoch += 1
 
 print(f"Trained Weights: [{w_perceptron[0]}, {w_perceptron[1]}]")
+print(f"Trained Bias: {bias}")
 
 # Testing
 print("\nTesting Perceptron Network:")
 for i in range(len(X)):
-    output = X[i][0] * w_perceptron[0] + X[i][1] * w_perceptron[1]
+    output = X[i][0] * w_perceptron[0] + X[i][1] * w_perceptron[1] + bias
     prediction = 1 if output >= 1 else 0
     print(f"Input: {X[i]} -> Output: {prediction} (Expected: {y[i]})")
 

@@ -75,11 +75,11 @@ def draw_tree(sentence):
     invalid_words = [w for w in words if w not in terminals]
     if invalid_words:
         print(f"Error: Unknown words - {invalid_words}")
-        print("\nValid words are:")
-        print(f"  Determiners: the, a, an")
-        print(f"  Nouns: cat, dog, boy, girl, ball, book")
-        print(f"  Verbs: chased, ate, read, is, loves")
-        print(f"  Adjectives: big, small, red, happy, good")
+        # print("\nValid words are:")
+        # print(f"  Determiners: the, a, an")
+        # print(f"  Nouns: cat, dog, boy, girl, ball, book")
+        # print(f"  Verbs: chased, ate, read, is, loves")
+        # print(f"  Adjectives: big, small, red, happy, good")
         return
     
     # Parse the sentence
@@ -91,11 +91,11 @@ def draw_tree(sentence):
         print(tree)
     else:
         print("No valid parse found!")
-        print("Sentence doesn't match grammar rules.")
-        print("\nTry sentences like:")
-        print("  - the cat chased the dog")
-        print("  - a boy read the book")
-        print("  - the dog is happy")
+        # print("Sentence doesn't match grammar rules.")
+        # print("\nTry sentences like:")
+        # print("  - the cat chased the dog")
+        # print("  - a boy read the book")
+        # print("  - the dog is happy")
 
 # Main Program
 # print("=" * 60)

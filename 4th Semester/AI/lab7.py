@@ -70,5 +70,8 @@ class GA:
         print(f"\nFinal Best: x = {best_ever_x}, f(x) = {best_ever_fit:.2f}")
         print(f"Expected: x = 4, f(x) = 21.00")
 
-GA(pop_size=12, generations=20, mutation_rate=0.1, bits=5).evolve()
+
+ga = GA(pop_size=12, generations=20, mutation_rate=0.1, bits=5)
+ga.evolve()
+
 print("\nProgrammed by Milan Bairagi...")
