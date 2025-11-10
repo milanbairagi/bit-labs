@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productCatalog>
+    <!-- Using Elements Approach -->
+    <productWithElements>
+        <name>Laptop</name>
+        <category>Electronics</category>
+        <price>150000</price>
+    </productWithElements>
+    
+    <productWithElements>
+        <name>Mouse</name>
+        <category>Electronics</category>
+        <price>3000</price>
+    </productWithElements>
+    
+    <!-- Using Attributes Approach -->
+    <productWithAttributes name="Keyboard" category="Electronics" price="4999"/>
+    
+    <productWithAttributes name="Monitor" category="Electronics" price="40000"/>
+    
+</productCatalog>

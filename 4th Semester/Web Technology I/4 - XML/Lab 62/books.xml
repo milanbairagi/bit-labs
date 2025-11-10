@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookCatalog>
+    <book>
+        <title>The Good Book</title>
+        <author>Milan Bairagi</author>
+        <publisher>NoName</publisher>
+        <price>5000</price>
+        <isbn>978-0123456789</isbn>
+    </book>
+    <book>
+        <title>Harry Potter and the Deathly Hallows</title>
+        <author>J.K. Rowling</author>
+        <publisher>Bloomsbury</publisher>
+        <price>1600</price>
+        <isbn>978-1408855713</isbn>
+    </book>
+</bookCatalog>
