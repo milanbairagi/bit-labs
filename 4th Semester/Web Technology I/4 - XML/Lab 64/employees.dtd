@@ -1,0 +1,11 @@
+<!--
+External DTD for Employee Data Validation
+Defines the structure for employee records
+-->
+
+<!ELEMENT employees (employee)*>
+<!ELEMENT employee (id, name, department, salary)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>

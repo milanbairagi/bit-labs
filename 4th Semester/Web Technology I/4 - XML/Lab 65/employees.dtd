@@ -1,0 +1,13 @@
+<!--
+Modified External DTD for Employee Data with Multiple Phone Numbers and Optional Email
+-->
+
+<!ELEMENT employees (employee)*>
+<!ELEMENT employee (id, name, department, salary, phoneNumbers, email?)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT phoneNumbers (phone+)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
