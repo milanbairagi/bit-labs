@@ -1,0 +1,56 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Root element -->
+    <xs:element name="students">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="StudentType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- Student complex type -->
+    <xs:complexType name="StudentType">
+        <xs:sequence>
+            <xs:element name="name" type="NameType"/>
+            <xs:element name="grade" type="GradeType"/>
+            <xs:element name="address" type="AddressType"/>
+        </xs:sequence>
+        <xs:attribute name="studentId" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+    <!-- Address complex type -->
+    <xs:complexType name="AddressType">
+        <xs:sequence>
+            <xs:element name="street" type="xs:string"/>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="zipCode" type="ZipCodeType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Simple types with restrictions -->
+    <xs:simpleType name="NameType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="GradeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A"/>
+            <xs:enumeration value="A-"/>
+            <xs:enumeration value="B+"/>
+            <xs:enumeration value="B"/>
+            <xs:enumeration value="B-"/>
+            <xs:enumeration value="C"/>
+            <xs:enumeration value="F"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="ZipCodeType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

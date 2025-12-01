@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee xmlns:personal="http://example.com/personal"
+          xmlns:job="http://example.com/job">
+
+    <personal:name>Milan Bairagi</personal:name>
+    <personal:age>20</personal:age>
+    <personal:address>Kathmandu</personal:address>
+
+    <job:designation>Software Developer</job:designation>
+    <job:department>IT</job:department>
+    <job:salary>85000</job:salary>
+
+</employee>

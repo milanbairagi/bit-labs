@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="students.xsd">
+    <student studentId="S001">
+        <name>Milan Bairagi</name>
+        <grade>A</grade>
+        <address>
+            <street>123 Main Street</street>
+            <city>Paradise</city>
+            <zipCode>10001</zipCode>
+        </address>
+    </student>
+    <student studentId="S002">
+        <name>Goku</name>
+        <grade>B-</grade>
+        <address>
+            <street>456 Oak Avenue</street>
+            <city>Los Angeles</city>
+            <zipCode>90001</zipCode>
+        </address>
+    </student>
+</students>

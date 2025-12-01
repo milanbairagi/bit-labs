@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="orders.xsd">
+    <order orderId="ORD001">
+        <customerDetails>
+            <customerName>Peter Parker</customerName>
+            <customerPhone>9876543210</customerPhone>
+            <address>Lainchaur, Kathmandu</address>
+        </customerDetails>
+        <products>
+            <product>
+                <productName>Laptop</productName>
+                <quantity>1</quantity>
+                <price>149999.99</price>
+            </product>
+            <product>
+                <productName>Wireless Mouse</productName>
+                <quantity>1</quantity>
+                <price>2000</price>
+            </product>
+        </products>
+        <totalAmount>152000</totalAmount>
+    </order>
+    <order orderId="ORD002">
+        <customerDetails>
+            <customerName>Tony Stark</customerName>
+            <customerPhone>9732636548</customerPhone>
+            <address>Chabel, Kathmandu</address>
+        </customerDetails>
+        <products>
+            <product>
+                <productName>Monitor</productName>
+                <quantity>1</quantity>
+                <price>40000</price>
+            </product>
+        </products>
+        <totalAmount>40000</totalAmount>
+    </order>
+</orders>
