@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="orders.xsd">
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="orders.xsd"
+>
     <order orderId="ORD001">
         <customerDetails>
             <customerName>Peter Parker</customerName>
