@@ -58,3 +58,11 @@ tempCodeRunnerFile.*
 
 # Ignore specific files
 test.ipynb
+
+# drive temp files and desktop ini files
+.tmp.*
+desktop.ini
+
+
+# Backup files
+*.bak
