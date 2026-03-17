@@ -1,5 +1,5 @@
-<!-- 3. Write a PHP program to check prime number. -->
 <?php
+// 3. Write a PHP program to check prime number.
 $number = 29;
 
 function isPrime($n) {

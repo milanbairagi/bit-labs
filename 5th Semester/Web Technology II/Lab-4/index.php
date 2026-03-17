@@ -1,5 +1,5 @@
-<!-- 4. Write a PHP program to print factorial of a number. -->
 <?php
+// 4. Write a PHP program to print factorial of a number.
 $number = 6;
 
 function factorial($n) {

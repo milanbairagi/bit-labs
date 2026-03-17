@@ -1,5 +1,5 @@
-<!-- 1. Write a PHP program to print sum of digits. -->
 <?php
+// 1. Write a PHP program to print sum of digits.
 $number = 123456;
 $sum = 0;
 $temp = abs($number);

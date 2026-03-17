@@ -1,6 +1,6 @@
-<!-- 5. Write a PHP program to check Armstrong number. -->
 <?php
 $number = 153;
+// 5. Write a PHP program to check Armstrong number.
 
 $temp = $number;
 $digits = strlen((string)$number);

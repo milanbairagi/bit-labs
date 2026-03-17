@@ -1,5 +1,5 @@
-<!-- 2. Write a PHP program to print Even or odd number -->
 <?php
+// 2. Write a PHP program to print Even or odd number
 $number = 47;
 
 if ($number % 2 == 0) {
