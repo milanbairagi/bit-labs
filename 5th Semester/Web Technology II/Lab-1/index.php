@@ -2,7 +2,7 @@
 // 1. Write a PHP program to print sum of digits.
 $number = 123456;
 $sum = 0;
-$temp = abs($number);
+$temp = $number;
 
 while ($temp > 0) {
     $sum += $temp % 10;
