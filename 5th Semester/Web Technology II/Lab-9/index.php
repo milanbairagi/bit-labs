@@ -8,4 +8,7 @@ $fname = readline();
 echo "Enter last name: ";
 $lname = readline();
 
-echo "$fname $lname";
+echo "Full Name: " . $fname . " " . $lname . "\n";
+
+echo "\nProgrammed by Milan Bairagi...";
+?>
