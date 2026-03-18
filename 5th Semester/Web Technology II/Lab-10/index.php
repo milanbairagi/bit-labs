@@ -8,17 +8,20 @@ $person = [
     "city" => "Kathmandu"
 ];
 
-echo "=== Array to Variables (extract) ===\n";
+echo "=== Array to Variables ===\n";
 extract($person);
 echo "Name: $name\n";
 echo "Age:  $age\n";
 echo "City: $city\n";
 
 // --- Variables to Array using compact() ---
-echo "\n=== Variables to Array (compact) ===\n";
+echo "\n=== Variables to Array ===\n";
 $country = "Nepal";
 $language = "PHP";
-$version  = 8;
+$version = 8;
 
 $info = compact("country", "language", "version");
 print_r($info);
+
+echo "\nProgrammed by Milan Bairagi...";
+?>
