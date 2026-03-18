@@ -18,4 +18,6 @@ if ($sum == $number) {
 } else {
     echo "$number is not an Armstrong number\n";
 }
+
+echo "\nProgrammed by Milan Bairagi...";
 ?>

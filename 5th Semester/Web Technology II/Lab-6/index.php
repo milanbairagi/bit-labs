@@ -16,4 +16,6 @@ if ($reverse == $number) {
 } else {
     echo "$number is not a Palindrome number\n";
 }
+
+echo "\nProgrammed by Milan Bairagi...";
 ?>

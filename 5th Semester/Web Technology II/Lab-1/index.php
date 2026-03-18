@@ -11,4 +11,6 @@ while ($temp > 0) {
 
 echo "Number: $number\n";
 echo "Sum of digits: $sum\n";
+
+echo "\nProgrammed by Milan Bairagi..."
 ?>

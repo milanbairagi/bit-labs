@@ -8,4 +8,6 @@ function factorial($n) {
 }
 
 echo "Factorial of $number = " . factorial($number) . "\n";
+
+echo "\nProgrammed by Milan Bairagi...";
 ?>

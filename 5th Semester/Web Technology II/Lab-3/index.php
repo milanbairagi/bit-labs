@@ -15,4 +15,6 @@ if (isPrime($number)) {
 } else {
     echo "$number is not a Prime number\n";
 }
+
+echo "\nProgrammed by Milan Bairagi...";
 ?>

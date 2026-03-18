@@ -16,3 +16,6 @@ $reversedNumber = reverse($number);
 
 echo "Original number: $number\n";
 echo "Reversed number: $reversedNumber\n";
+
+echo "\nProgrammed by Milan Bairagi...";
+?>

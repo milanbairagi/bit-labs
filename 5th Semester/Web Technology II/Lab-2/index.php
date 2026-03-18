@@ -7,4 +7,6 @@ if ($number % 2 == 0) {
 } else {
     echo "$number is Odd\n";
 }
+
+echo "\nProgrammed by Milan Bairagi...";
 ?>

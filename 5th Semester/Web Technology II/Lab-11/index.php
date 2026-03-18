@@ -10,4 +10,6 @@ if (preg_match($pattern, $email)) {
 } else {
     echo "$email is an invalid email address\n";
 }
+
+echo "\nProgrammed by Milan Bairagi...";
 ?>

@@ -22,3 +22,6 @@ $person2 = new Person("John", 25);
 $person1->display();
 echo "\n";
 $person2->display();
+
+echo "\nProgrammed by Milan Bairagi...";
+?>
