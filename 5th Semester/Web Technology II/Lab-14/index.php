@@ -2,16 +2,19 @@
 // 14. Remove specific element by value from an array in PHP
 
 function removeElement(&$array, $value) {
-    for ($i = 0; $i < count($array); $i++) {
-        if ($array[$i] == $value) {
-            array_splice($array, $i, 1);
-            return;
-        }
+    $key = array_search($value, $array);
+    if ($key !== false) {
+        unset($array[$key]);
+        // Reindex the array to maintain numeric keys
+        $array = array_values($array);
     }
 }
 
-$fruits = ["apple", "banana", "cherry", "date", "banana"];
+$fruits = ["apple", "banana", "cherry"];
 print_r($fruits);
 
 removeElement($fruits, "banana");
 print_r($fruits);
+
+echo "\nProgrammed by Milan Bairagi...";
+?>
