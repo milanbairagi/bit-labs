@@ -3,7 +3,7 @@
 function countWords($str) {
     $num_words = 0;
     for ($i = 0; $i < strlen($str); $i++) {
-        if ($str[$i] == ' ') {
+        if ($str[$i] == ' ' && $i > 0 && $str[$i - 1] != ' ') {
             $num_words++;
         }
     }
@@ -13,3 +13,6 @@ function countWords($str) {
 $string = "Hello World! This is a PHP";
 echo "String: $string\n";
 countWords($string);
+
+echo "\nProgrammed by Milan Bairagi...";
+?>
