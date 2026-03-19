@@ -9,7 +9,7 @@ and display it in textbox
     <title>Simple Interest Calculator</title>
 </head>
 <body>
-    <form method="post">Hus
+    <form method="post">
         <label for="principal">Principal Amount:</label>
         <input type="number" id="principal" name="principal" required><br>
 
