@@ -42,34 +42,13 @@ $conn->close();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Customers from Pokhara</title>
 	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 20px;
-		}
 		table {
 			border-collapse: collapse;
-			width: 100%;
-			max-width: 800px;
 		}
 		th, td {
 			border: 1px solid #ddd;
 			padding: 10px;
 			text-align: left;
-		}
-		th {
-			background-color: #4CAF50;
-			color: white;
-		}
-		tr:nth-child(even) {
-			background-color: #f2f2f2;
-		}
-		.no-data {
-			color: #d32f2f;
-			font-weight: bold;
-		}
-		.found {
-			color: #0a7a1f;
-			font-weight: bold;
 		}
 	</style>
 </head>
@@ -77,7 +56,7 @@ $conn->close();
 	<h2>Customers from <?php echo $city; ?> City</h2>
 	
 	<?php if (count($customers) > 0): ?>
-		<p class="found">Found <?php echo count($customers); ?> customer(s) from <?php echo $city; ?></p>
+		<p>Found <?php echo count($customers); ?> customer(s) from <?php echo $city; ?></p>
 		<table>
 			<thead>
 				<tr>
@@ -103,7 +82,7 @@ $conn->close();
 			</tbody>
 		</table>
 	<?php else: ?>
-		<p class="no-data">No customers found from <?php echo $city; ?> city.</p>
+		<p>No customers found from <?php echo $city; ?> city.</p>
 	<?php endif; ?>
 	
 	<p><strong>Database:</strong> <?php echo $database; ?></p>
