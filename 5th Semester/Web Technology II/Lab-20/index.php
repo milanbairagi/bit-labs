@@ -42,5 +42,7 @@ if (isset($_POST['display_cookie']) && isset($_COOKIE[$_POST['cookie_name']])) {
         </strong> :
         <?php echo htmlspecialchars($value); ?>
 	<?php endif; ?>
+
+	<p>Programmed by Milan Bairagi...</p>
 </body>
 </html>
