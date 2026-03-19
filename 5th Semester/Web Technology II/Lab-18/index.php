@@ -37,10 +37,10 @@ if (!$conn->query($createTableSql)) {
 
 $customers = [
 	["Aarav Sharma", "aarav.sharma@example.com", "9841000001", "Kathmandu"],
-	["Sita Karki", "sita.karki@example.com", "9841000002", "Pokhara"],
-	["Rohan Adhikari", "rohan.adhikari@example.com", "9841000003", "Lalitpur"],
-	["Nisha Gautam", "nisha.gautam@example.com", "9841000004", "Bhaktapur"],
-	["Bikash Thapa", "bikash.thapa@example.com", "9841000005", "Pokhara"]
+	["Sita Karki", "sita@example.com", "9841000002", "Pokhara"],
+	["Rohan Adhikari", "rohan@example.com", "9841000003", "Lalitpur"],
+	["Nisha Gautam", "nisha@example.com", "9841000004", "Bhaktapur"],
+	["Bikash Thapa", "bikash@example.com", "9841000005", "Pokhara"]
 ];
 
 $insertSql = "INSERT INTO $table (name, email, phone, city) VALUES (?, ?, ?, ?)";
@@ -71,17 +71,13 @@ $conn->close();
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Insert Customers</title>
-	<style>
-		.ok {
-			color: #0a7a1f;
-			font-weight: bold;
-		}
-	</style>
 </head>
 <body>
-	<h2>Customer Insertion Program</h2>
-	<p class="ok"><?php echo $inserted; ?> out of 5 customer records inserted successfully.</p>
+	<h2>Customer Insertion</h2>
+	<p><?php echo $inserted; ?> customers is inserted.</p>
 	<p><strong>Database:</strong> <?php echo $database; ?></p>
 	<p><strong>Table:</strong> <?php echo $table; ?></p>
+
+	<p>Programmed by Milan Bairagi...</p>
 </body>
 </html>
