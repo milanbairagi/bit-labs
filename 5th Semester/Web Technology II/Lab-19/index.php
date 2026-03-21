@@ -86,6 +86,7 @@ $conn->close();
 	<?php endif; ?>
 	
 	<p><strong>Database:</strong> <?php echo $database; ?></p>
-	<p><strong>Table:</strong> <?php echo $table; ?></p>
+	<p><strong>Table:</strong> <?php echo $table; ?></p><br>
+	<p>Programmed by Milan Bairagi...</p>
 </body>
 </html>
