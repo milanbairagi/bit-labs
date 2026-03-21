@@ -18,6 +18,8 @@ Drive Links: [Labs](https://drive.google.com/drive/folders/1J9-eM58sFZi4dfsiGRt6
 | 4th Semester     | AI                  | [AI](4th%20Semester/AI/)                                             |
 | 4th Semester     | NDC                 | [NDC](4th%20Semester/NDC/)                                           |
 | 4th Semester     | Web Technology I    | [Web Technology I](4th%20Semester/Web%20Technology%20I/)             |
+| 5th Semester     | Web Technology II   | [Web Technology II](5th%20Semester/Web%20Technology%20II/)           |
+| 5th Semester     | Computer Graphics   | [Computer Graphics](5th%20Semester/Computer%20Graphics/)             |
 
 ---
 
