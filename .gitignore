@@ -70,3 +70,6 @@ desktop.ini
 # Syncthing files
 .stignore
 .stfolder/*
+
+# builds
+build/*
