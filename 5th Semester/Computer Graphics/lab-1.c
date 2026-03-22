@@ -40,5 +40,7 @@ int main() {
         y += yInc;
     }
 
+    printf("\nProgrammed by Milan Bairagi..\n");
+
     return 0;
 }
