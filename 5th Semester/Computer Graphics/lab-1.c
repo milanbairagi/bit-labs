@@ -40,7 +40,7 @@ int main() {
         y += yInc;
     }
 
-    printf("\nProgrammed by Milan Bairagi..\n");
+    printf("\nProgrammed by Milan Bairagi...");
 
     return 0;
 }
