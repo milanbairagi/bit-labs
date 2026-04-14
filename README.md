@@ -1,6 +1,6 @@
 # BIT Labs: Lab Reports for Bachelor in Information Technology (BIT)
 
-Drive Links: [Labs](https://drive.google.com/drive/folders/1BgGQgu70sccbPtgxGbWPXOx0BGdg4QYT?usp=sharing) | [Notes](https://drive.google.com/drive/folders/15K3K9kCA5wJAxouH4xg2FXpiR7v3U6RF)
+Drive Links: [Labs](https://drive.google.com/drive/folders/1BgGQgu70sccbPtgxGbWPXOx0BGdg4QYT) | [Notes](https://drive.google.com/drive/folders/15K3K9kCA5wJAxouH4xg2FXpiR7v3U6RF)
 
 ## Table of Contents
 
