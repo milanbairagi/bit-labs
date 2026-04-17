@@ -42,7 +42,7 @@ g++ main.cpp -lfreeglut -lopengl32 -lglu32 -o app.exe
 
 ---
 
-# Download OpenGL and FreeGLUT in Linux (Arch)
+# Linux (Arch)
 
 ## 1. Install required packages
 
