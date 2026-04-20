@@ -81,19 +81,19 @@ void mouse(int button, int state, int x, int y) {
 
 void init() {
 	glClearColor(BACKGROUND_COLOR[0] / 255.0f, BACKGROUND_COLOR[1] / 255.0f, BACKGROUND_COLOR[2] / 255.0f, 1.0f);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
+	// glMatrixMode(GL_PROJECTION);
+	// glLoadIdentity();
 	gluOrtho2D(0, W, 0, H);
-	glMatrixMode(GL_MODELVIEW);
-	glPointSize(1.0f);
-	glLoadIdentity();
+	// glMatrixMode(GL_MODELVIEW);
+	// glPointSize(1.0f);
+	// glLoadIdentity();
 }
 
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+	// glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(W, H);
-	glutInitWindowPosition(100, 100);
+	// glutInitWindowPosition(100, 100);
 	glutCreateWindow("Lab 6 - Flood Fill Algorithm - Milan Bairagi");
 
 	init();
