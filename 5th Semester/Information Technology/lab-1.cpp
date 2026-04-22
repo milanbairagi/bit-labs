@@ -54,6 +54,6 @@ int main() {
         cout << "Decrypted: " << decrypt(text, key) << endl;
     }
 
-    cout << "\nProgrammed by Milan Bairagi (2014/080)";
+    cout << "\nProgrammed by Milan Bairagi...";
     return 0;
 }
