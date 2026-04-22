@@ -43,20 +43,12 @@ void setIdentity(float m[3][3]) {
 }
 
 void multiplyMatrix(const float a[3][3], const float b[3][3], float out[3][3]) {
-	float temp[3][3];
-
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
-			temp[i][j] = 0.0f;
+			out[i][j] = 0.0f;
 			for (int k = 0; k < 3; k++) {
-				temp[i][j] += a[i][k] * b[k][j];
+				out[i][j] += a[i][k] * b[k][j];
 			}
-		}
-	}
-
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++) {
-			out[i][j] = temp[i][j];
 		}
 	}
 }
@@ -217,12 +209,12 @@ void keyboard(unsigned char key, int, int) {
 
 void initGL() {
 	glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
+	// glMatrixMode(GL_PROJECTION);
+	// glLoadIdentity();
 	gluOrtho2D(-W / 2.0f, W / 2.0f, -H / 2.0f, H / 2.0f);
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-	setIdentity(currentMatrix);
+	// glMatrixMode(GL_MODELVIEW);
+	// glLoadIdentity();
+	// setIdentity(currentMatrix);
 }
 
 int main(int argc, char** argv) {
