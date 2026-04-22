@@ -40,6 +40,7 @@ int main() {
 
     cout << "Enter 1 to encrypt or 2 to decrypt: ";
     cin >> choice;
+    cin.ignore();
 
     cout << "Enter text (lowercase): ";
     getline(cin, text);
