@@ -134,6 +134,8 @@ void display() {
 		drawText(20.0f, 540.0f, "Rejected: line outside the window");
 	}
 
+	drawText(20.0f, 520.0f, "Programmed by: Milan Bairagi");
+
 	glFlush();
 }
 
