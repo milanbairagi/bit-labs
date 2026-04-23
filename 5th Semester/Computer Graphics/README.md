@@ -1,3 +1,19 @@
+# Computer Graphics
+
+## Table of Contents
+| Lab No. | Title | Link |
+|---------|-------|------|
+| 1 | Write a program to implement DDA Line Drawing Algorithm | [Lab 1](lab-1.cpp) |
+| 2 | Write a program to implement Bresenham’s Line Drawing Algorithm | [Lab 2](lab-2.cpp) |
+| 3 | Write a program to implement mid-point circle drawing algorithm | [Lab 3](lab-3.cpp) |
+| 4 | Write a program to implement mid-point ellipse drawing algorithm | [Lab 4](lab-4.cpp) |
+| 5 | Write a program to implement boundary fill algorithm | [Lab 5](lab-5.cpp) |
+| 6 | Write a program to implement flood fill algorithm | [Lab 6](lab-6.cpp) |
+| 7 | Write a program to implement 2D transformation on an object | [Lab 7](lab-7.cpp) |
+| 8 | Write a program to implement Cohen-Sutherland Line Clipping Algorithm | [Lab 8](lab-8.cpp) |
+
+---
+
 # Install OpenGL and FreeGLUT
 
 # Windows (MinGW)
