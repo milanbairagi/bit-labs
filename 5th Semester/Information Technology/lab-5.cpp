@@ -74,44 +74,6 @@ string decrypt(string ciphertext, string key) {
     return plaintext;
 }
 
-// Function to display the cipher process step by step
-void displayCipherProcess(string plaintext, string key, bool isEncrypt) {
-    plaintext = preprocessText(plaintext);
-    key = prepareKey(plaintext, key);
-    
-    cout << "\nCipher Process:" << endl;
-    cout << "Plaintext:  ";
-    for (char c : plaintext) cout << c << " ";
-    cout << endl;
-    
-    cout << "Key:        ";
-    for (char c : key) cout << c << " ";
-    cout << endl;
-    
-    cout << "Values:     ";
-    for (char c : plaintext) cout << (c - 'A') << " ";
-    cout << endl;
-    
-    cout << "Key Values: ";
-    for (char c : key) cout << (c - 'A') << " ";
-    cout << endl;
-    
-    if (isEncrypt) {
-        cout << "Result:     ";
-        for (int i = 0; i < plaintext.length(); i++) {
-            int val = ((plaintext[i] - 'A' + (key[i] - 'A')) % 26);
-            cout << (char)('A' + val) << " ";
-        }
-    } else {
-        cout << "Result:     ";
-        for (int i = 0; i < plaintext.length(); i++) {
-            int val = ((plaintext[i] - 'A' - (key[i] - 'A')) % 26 + 26) % 26;
-            cout << (char)('A' + val) << " ";
-        }
-    }
-    cout << endl << endl;
-}
-
 int main() {
     string plaintext, key;
     int choice;
@@ -124,30 +86,13 @@ int main() {
     cout << "Enter the key: ";
     getline(cin, key);
     
-    cout << "\n1. Encrypt" << endl;
-    cout << "2. Decrypt" << endl;
-    cout << "3. Both" << endl;
-    cout << "Enter your choice (1/2/3): ";
-    cin >> choice;
+    string ciphertext = encrypt(plaintext, key);
+    cout << "\nPlaintext: " << plaintext << endl;
+    cout << "Encrypted text: " << ciphertext << endl;
     
-    if (choice == 1 || choice == 3) {
-        string ciphertext = encrypt(plaintext, key);
-        cout << "\nEncrypted text: " << ciphertext << endl;
-        displayCipherProcess(plaintext, key, true);
-    }
-    
-    if (choice == 2) {
-        string decryptedtext = decrypt(plaintext, key);
-        cout << "\nDecrypted text: " << decryptedtext << endl;
-        displayCipherProcess(plaintext, key, false);
-    }
-    
-    if (choice == 3) {
-        string ciphertext = encrypt(plaintext, key);
-        string decryptedtext = decrypt(ciphertext, key);
-        cout << "\nDecrypted text: " << decryptedtext << endl;
-        displayCipherProcess(ciphertext, key, false);
-    }
+    string decryptedtext = decrypt(ciphertext, key);
+    cout << "\nCiphertext: " << ciphertext << endl;
+    cout << "Decrypted text: " << decryptedtext << endl;
     
     return 0;
 }
