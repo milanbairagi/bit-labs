@@ -20,7 +20,7 @@ Drive Links: [Labs](https://drive.google.com/drive/folders/1BgGQgu70sccbPtgxGbWP
 | 4th Semester     | Web Technology I         | [Web Technology I](4th%20Semester/Web%20Technology%20I/)             |
 | 5th Semester     | Web Technology II        | [Web Technology II](5th%20Semester/Web%20Technology%20II/)           |
 | 5th Semester     | Computer Graphics        | [Computer Graphics](5th%20Semester/Computer%20Graphics/)             |
-| 5th Semester     | Information Technology   | [Information Technology](5th%20Semester/Information%20Technology/)   |
+| 5th Semester     | Information Security     | [Information Security](5th%20Semester/Information%20Security/)       |
 
 ---
 
