@@ -110,6 +110,8 @@ int main() {
     cout << "\nCiphertext: " << ciphertext << endl;
     cout << "Decrypted text: " << decryptedtext << endl;
     // displayCipherProcess(ciphertext, key, false);
+
+    cout << "\nProgrammed by Milan Bairagi..." << endl;
     
     return 0;
 }
