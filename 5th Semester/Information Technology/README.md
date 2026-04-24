@@ -1,4 +1,4 @@
-# Information Technology
+# Information Security
 
 ## Table of Contents
 | Lab No. | Title | Link |
