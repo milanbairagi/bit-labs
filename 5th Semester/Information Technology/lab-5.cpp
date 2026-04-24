@@ -93,6 +93,8 @@ int main() {
     string decryptedtext = decrypt(ciphertext, key);
     cout << "\nCiphertext: " << ciphertext << endl;
     cout << "Decrypted text: " << decryptedtext << endl;
+
+    cout << "\nProgrammed by Milan Bairagi..." << endl;
     
     return 0;
 }

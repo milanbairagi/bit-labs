@@ -160,6 +160,8 @@ int main() {
     } else if (choice == 2) {
         cout << "Decrypted: " << decrypt(text, key) << endl;
     }
+
+    cout << "\nProgrammed by Milan Bairagi...";
     
     return 0;
 }
