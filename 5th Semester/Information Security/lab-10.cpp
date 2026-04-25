@@ -1,5 +1,4 @@
 // 10.WAP to implement Fermat’s Theorem to test a given number is prime or not.
-// #include <bits/stdc++.h>
 #include <iostream>
 
 using namespace std;
@@ -74,6 +73,8 @@ int main()
     cin >> num;
 
     cout << num << " is " << (isPrime(num, k) ? "prime" : "composite") << endl;
+
+    cout << "\nProgrammed by Milan Bairagi..." << endl;
     
     return 0;
 }
