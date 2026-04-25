@@ -50,6 +50,8 @@ int main() {
     
     int result = gcd(num1, num2);
     cout << "\nGCD(" << num1 << ", " << num2 << ") = " << result << endl;
+
+    cout << "\nProgrammed by Milan Bairagi..." << endl;
     
     return 0;
 }
