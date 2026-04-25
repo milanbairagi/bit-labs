@@ -31,5 +31,7 @@ int main() {
 
     int result = etf(n);
     cout << "Euler's Totient Function for " << n << " is " << result << endl;
+
+    cout << "\nProgrammed by Milan Bairagi..." << endl;
     return 0; 
 }
