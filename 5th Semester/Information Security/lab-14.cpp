@@ -111,6 +111,7 @@ int main() {
     cout << "\nDecryption:" << endl;
     cout << "Decrypted Message (M) = C^d mod n = " << ciphertext << "^" << d << " mod " << n << " = " << decrypted << endl;
     
+    cout << "\nProgrammed by Milan Bairagi..." << endl;
     
     return 0;
 }
