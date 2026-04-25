@@ -52,5 +52,7 @@ int main() {
     cout << "Shared secret (Alice): " << "y^a mod P = " << ka << endl;
     cout << "Shared secret (Bob): " << "x^b mod P = " << kb << endl;
 
+    cout << "\nProgrammed by Milan Bairagi..." << endl;
+    
     return 0;
 }
