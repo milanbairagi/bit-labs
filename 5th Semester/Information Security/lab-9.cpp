@@ -23,23 +23,17 @@ int main() {
     
     int count = 0;
     int num = 2;
-    int primes[20];
     
     // Find first 20 prime numbers
     while (count < 20) {
         if (isPrime(num)) {
             cout << num << " ";
-            primes[count] = num;
             count++;
         }
         num++;
     }
 
-    cout << endl;
-
-    for (int i = 0; i < 20; i++) {
-        cout << primes[i] << " ";
-    }
+    cout << "\n\nProgrammed by Milan Bairagi..." << endl;
     
     return 0;
 }
