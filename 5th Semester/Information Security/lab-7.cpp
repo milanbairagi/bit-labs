@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include <string>
-#include <algorithm>
 #include <vector>
 
 using namespace std;
@@ -123,6 +122,8 @@ int main() {
     cout << "Number of rails: " << rails << endl;
     string decrypted = railFenceDecrypt(encrypted, rails);
     cout << "Decrypted text: " << decrypted << endl;
+
+    cout << "\nProgrammed by Milan Bairagi..." << endl;
 
     return 0;
 }
