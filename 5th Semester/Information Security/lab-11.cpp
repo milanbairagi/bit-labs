@@ -1,5 +1,6 @@
-#include<iostream>
-#include<cmath>
+#include <iostream>
+#include <cmath>
+
 using namespace std;
 
 // Function to compute GCD using Euclidean Algorithm
@@ -66,22 +67,24 @@ int main() {
     cout << "Enter second number: ";
     cin >> num2;
     
-    cout << "\n--- Results ---\n";
+    cout << "\n=== Results ===\n";
     
     // Check if relatively prime
     if (areRelativelyPrime(num1, num2)) {
-        cout << num1 << " and " << num2 << " are RELATIVELY PRIME (coprime).\n";
+        cout << num1 << " and " << num2 << " are relatively prime.\n";
         cout << "GCD(" << num1 << ", " << num2 << ") = " << gcd(num1, num2) << "\n\n";
         
         // Verify Euler's Theorem with first number as base and second as modulus
-        cout << "--- Verifying Euler's Theorem ---\n";
+        cout << "=== Verifying Euler's Theorem ===\n";
         if (verifyEulerTheorem(num1, num2)) {
             cout << "Euler's Theorem verified: a^φ(n) ≡ 1 (mod n)\n";
         }
     } else {
-        cout << num1 << " and " << num2 << " are NOT relatively prime.\n";
+        cout << num1 << " and " << num2 << " are not relatively prime.\n";
         cout << "GCD(" << num1 << ", " << num2 << ") = " << gcd(num1, num2) << "\n";
     }
+
+    cout << "\nProgrammed by Milan Bairagi..." << endl;
     
     return 0;
 }
