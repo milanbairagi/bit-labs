@@ -6,6 +6,8 @@
 - A web browser
 - MySQL (for lab-18 and lab-19)
 
+> Note: For labs that require database connection, make sure to set up your MySQL database and update the connection details in the respective lab's code.
+
 ### Running the Labs:
 1. Clone or download this repository
 2. Start a PHP server:
@@ -14,6 +16,15 @@ php -S localhost:8000
 ```
 3. Open your browser and navigate to `http://localhost:8000/Lab-X/` where X is the lab number you want to run
 4. To stop the server, press `Ctrl+C` in your terminal
+
+### Alternative: Using Docker:
+For a complete environment with PHP, Apache, and MySQL pre-configured:
+```bash
+git clone https://github.com/milanbairagi/web-tech-starter.git
+cd web-tech-starter
+docker compose up --build
+```
+Then access the labs at `http://localhost:8000/`. Refer to that repository for more details.
 
 ## Table of Contents
 | Lab No. | Title | Link |
