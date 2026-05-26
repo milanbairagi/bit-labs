@@ -24,7 +24,7 @@ git clone https://github.com/milanbairagi/web-tech-starter.git
 cd web-tech-starter
 docker compose up --build
 ```
-Then access the labs at `http://localhost:8000/`. Refer to that repository for more details.
+Then access the labs at `http://localhost:8000/`. Refer to [repository](https://github.com/milanbairagi/web-tech-starter.git) for more details.
 
 ## Table of Contents
 | Lab No. | Title | Link |
