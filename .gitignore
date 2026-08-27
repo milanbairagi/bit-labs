@@ -73,3 +73,8 @@ desktop.ini
 
 # builds
 build/*
+
+# Syncing ignore files
+.rcloneignore
+.stignore.*
+README.sync-*
