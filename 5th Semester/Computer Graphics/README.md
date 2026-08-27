@@ -18,44 +18,19 @@
 
 # Windows (MinGW)
 
-## 1. Get FreeGLUT
-
-Download FreeGLUT (precompiled):
-
-- gives you:
-  - `include/GL/freeglut.h`
-  - `lib/freeglut.lib`
-  - `bin/freeglut.dll`
-
-## 2. Place files correctly
-
-Assuming you use MinGW (g++):
-
-### Headers
-
-Copy:
-`freeglut.h → C:\mingw64\include\GL\`
-
-### Library
-
-Copy:
-`freeglut.lib → C:\mingw64\lib\`
-
-### DLL (important)
-
-Copy:
-
-Either `freeglut.dll → C:\Windows\System32`
-
-or `freeglut.dll → same folder as your .exe`
-
-## 3. Compile and run
-
-```powershell
-g++ main.cpp -lfreeglut -lopengl32 -lglu32 -o app.exe
-.\app.exe
-```
-
+1. Download [FreeGLUT (precompiled)](https://www.songho.ca/opengl/gl_freeglut.html) OR [Direct zip link](https://www.songho.ca/opengl/files/freeglut-mingw-3.8.0.zip)
+2. Download the .zip archive provided under **Freeglut Binary for MinGW (g++)**
+3. Inside `freeglut` includes:
+   - `include/GL/` contains your header files.
+   - `lib/` contains the 32-bit files (libfreeglut.dll.a, libfreeglut_static.a).
+   - `bin/libfreeglut.dll` Shared dynamic link libraries (DLLs)
+4. Go inside `freeglut` and **copy** `include/`, `lib/`, and `bin/`
+5. **Paste** in `C:/MinGW/`
+6. **Compile** and **Run**:
+   ```powershell
+   g++ main.cpp -o main.exe -lfreeglut -lglu32 -lopengl32
+   ./main.exe
+   ```
 ---
 
 # Linux (Arch)
