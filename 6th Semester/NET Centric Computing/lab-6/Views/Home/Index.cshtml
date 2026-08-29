@@ -1,0 +1,50 @@
+@model IEnumerable<lab_6.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Students</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Created At
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+        <tr>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id">@item.Id</a>
+            </td>
+            <td>
+                @* @Html.DisplayFor(modelItem => item.Name) *@
+                @item.Name
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.CreatedAt
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@section Scripts {
+
+}
