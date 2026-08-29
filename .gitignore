@@ -78,3 +78,11 @@ build/*
 .rcloneignore
 .stignore.*
 README.sync-*
+
+# ASP.NET Core / Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.rsuser
+*.suo
