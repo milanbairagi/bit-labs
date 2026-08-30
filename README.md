@@ -22,6 +22,7 @@ Drive Links: [Labs](https://drive.google.com/drive/folders/1BgGQgu70sccbPtgxGbWP
 | 5th Semester     | Computer Graphics        | [Computer Graphics](5th%20Semester/Computer%20Graphics/)                          |
 | 5th Semester     | Information Security     | [Information Security](5th%20Semester/Information%20Security/)                    |
 | 5th Semester     | Software Engineering     | [Software Engineering](https://github.com/milanbairagi/library-management-system) |
+| 6th Semester     | NET Centric Computing    | [NET Centric Computing](6th%20Semester/NET%20Centric%20Computing/)                |
 
 ---
 
