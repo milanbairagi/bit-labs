@@ -23,14 +23,6 @@ class Student : IStudent
     }
 }
 
-class Employee : IEmployee
-{
-    public void Work()
-    {
-        Console.WriteLine("Employee is working.");
-    }
-}
-
 class Intern : Student, IEmployee
 {
     public void Work()
@@ -46,5 +38,7 @@ class Program
         Intern intern = new Intern();
         intern.Study();
         intern.Work();
+
+        Console.WriteLine("\nProgrammed by Milan Bairagi...");
     }
 }

@@ -30,7 +30,7 @@ class Program
             new Student(2, 102, "Bob", "Kapan"),
             new Student(3, 101, "Charlie", "Patan"),
             new Student(4, 103, "David", "Thamel"),
-            new Student(5, 102, "Eve", "Baneshwor")
+            new Student(5, 102, "Eve", "Baneshwor"),
         ];
 
         Console.Write("Enter Department Id to filter students: ");
@@ -44,5 +44,7 @@ class Program
         {
             Console.WriteLine($"{student.Id}\t{student.Name}\t{student.Address}");
         }
+
+        Console.WriteLine("\nProgrammed by Milan Bairagi...");
     }
 }

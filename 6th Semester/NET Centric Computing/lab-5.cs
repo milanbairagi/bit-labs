@@ -1,7 +1,5 @@
 // Lab 5: What exception handling? Write a program to handle exception when User put character in price field.
 
-using System;
-
 class Program
 {
     static void Main()
@@ -26,5 +24,7 @@ class Program
         {
             Console.WriteLine($"An unexpected error occurred: {e.Message}");
         }
+
+        Console.WriteLine("\nProgrammed by Milan Bairagi...");
     }
 }

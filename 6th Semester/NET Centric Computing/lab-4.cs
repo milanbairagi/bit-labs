@@ -4,9 +4,9 @@ LINQ stands for Language Integrated Query. It is used to query and filter data i
 Write a program to display voter name whose age is greater than 18 and lives in "Patan".
 */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+// using System;
+// using System.Collections.Generic;
+// using System.Linq;
 
 class Voter
 {
@@ -26,14 +26,14 @@ class Program
 {
     static void Main()
     {
-        List<Voter> voters = new List<Voter>
-        {
+        List<Voter> voters =
+        [
             new Voter("Aarav Shrestha", 19, "Patan"),
             new Voter("Nisha Karki", 17, "Patan"),
             new Voter("Suman Thapa", 22, "Kathmandu"),
             new Voter("Priya Maharjan", 25, "Patan"),
             new Voter("Ramesh Lama", 18, "Patan"),
-        };
+        ];
 
         // 1. Query Syntax
         // IEnumerable<Voter> eligibleVoters =
@@ -51,5 +51,7 @@ class Program
         {
             Console.WriteLine(voter.Name);
         }
+
+        Console.WriteLine("\nProgrammed by Milan Bairagi...");
     }
 }
