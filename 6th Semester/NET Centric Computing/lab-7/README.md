@@ -1,6 +1,6 @@
-# Lab 6
+# Lab 7
 
-Small ASP.NET Core MVC project using SQLite for basic student CRUD operations.
+Small ASP.NET Core MVC project using SQLite for player data validation using data annotations.
 
 ## Setup
 ```bash
