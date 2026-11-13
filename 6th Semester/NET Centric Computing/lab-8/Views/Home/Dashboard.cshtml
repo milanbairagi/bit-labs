@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h1>Dashboard</h1>
+<p>Welcome, <strong>@User.Identity?.Name</strong>!</p>
+<p>Your role is <strong>@(User.IsInRole("Admin") ? "Admin" : "User")</strong>.</p>
+
+@if (User.IsInRole("Admin"))
+{
+    <a asp-action="Admin" class="btn btn-primary">Open admin page</a>
+}
