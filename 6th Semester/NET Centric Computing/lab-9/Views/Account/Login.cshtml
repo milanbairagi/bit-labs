@@ -1,0 +1,28 @@
+@model lab_9.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+<p>Use <strong>user / user123</strong> to log in.</p>
+<p class="text-muted">The login cookie expires automatically after five days.</p>
+
+<form asp-action="Login" method="post" class="col-md-5">
+    <input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Username" class="form-label"></label>
+        <input asp-for="Username" class="form-control" />
+        <span asp-validation-for="Username" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password" class="form-label"></label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Log in</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
