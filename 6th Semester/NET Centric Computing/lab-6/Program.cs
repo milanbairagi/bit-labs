@@ -1,9 +1,14 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using lab_6.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddDbContext<StudentContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("StudentContext") ?? throw new InvalidOperationException("Connection string 'StudentContext' not found.")));
+    options.UseSqlite(
+        builder.Configuration.GetConnectionString("StudentContext")
+            ?? throw new InvalidOperationException("Connection string 'StudentContext' not found.")
+    )
+);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
